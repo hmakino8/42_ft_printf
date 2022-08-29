@@ -2,7 +2,7 @@
 *A function that will mimic the real printf/dprintf.*
 
 ## Program name
-`libftprintf.a` `libftdprintf`
+`libftprintf.a` `libftdprintf.a`
 
 ## Prototype
 ```C
@@ -18,7 +18,7 @@ To compile the library, run:
 $ make
 ```
 ## Description
-- Write a library that contains ft_printf, a function that will mimic the real printf.
+- Write a library that contains ft_printf/ft_dprintf, a function that will mimic the real printf/dprintf.
 - It must not do the buﬀer management like the real printf.
 - It will manage the following conversions: cspdiuxX%.
 - It will manage any combination of the following ﬂags: ’-0.*’ and minimum ﬁeld width with all conversions.
