@@ -6,7 +6,7 @@
 #    By: hmakino <hmakino@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/04/03 05:02:19 by hmakino           #+#    #+#              #
-#    Updated: 2022/06/14 00:54:35 by hmakino          ###   ########.fr        #
+#    Updated: 2022/08/29 20:44:18 by hiroaki          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -18,8 +18,6 @@ SRCS		=	ft_dprintf.c \
 				utils.c
 
 OBJS		=	$(SRCS:.c=.o)
-
-CFLAGS		=	-Wall -Wextra -Werror
 
 $(NAME):	$(OBJS)
 			ar rcs $(NAME) $(OBJS)
