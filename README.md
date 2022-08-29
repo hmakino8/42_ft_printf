@@ -1,12 +1,13 @@
-# 42_ft_printf
-*A function that will mimic the real printf.*
+# 42_ft_printf / ft_dprintf
+*A function that will mimic the real printf/dprintf.*
 
 ## Program name
-libftprintf.a
+`libftprintf.a` `libftdprintf`
 
 ## Prototype
 ```C
 int ft_printf(const char *format, ...);
+int ft_dprintf(int fd, const char *format, ...);
 ```
 ## Turn in files
 `*.c`, `*/*.c`, `*.h`, `*/*.h`, `Makefile`
