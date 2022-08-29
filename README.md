@@ -17,6 +17,10 @@ To compile the library, run:
 ```sh
 $ make
 ```
+Test to confirm operation, run:
+```sh
+$ ./test
+```
 ## Description
 - Write a library that contains ft_printf/ft_dprintf, a function that will mimic the real printf/dprintf.
 - It must not do the buﬀer management like the real printf.
