@@ -1,5 +1,4 @@
 # ft_printf / ft_dprintf
-*A function that will mimic the real printf/dprintf.*
 
 ### Program name
 `libftprintf.a` `libftdprintf.a`
