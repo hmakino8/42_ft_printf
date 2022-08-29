@@ -1,4 +1,4 @@
-# 42_ft_printf / ft_dprintf
+# ft_printf / ft_dprintf
 *A function that will mimic the real printf/dprintf.*
 
 ## Program name
