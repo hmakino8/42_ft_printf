@@ -6,48 +6,30 @@
 #    By: hmakino <hmakino@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/04/03 05:02:19 by hmakino           #+#    #+#              #
-#    Updated: 2022/04/12 15:18:13 by hmakino          ###   ########.fr        #
+#    Updated: 2022/08/30 01:49:38 by hiroaki          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME				= libftprintf.a
+NAME		=	libftprintf.a
 
-SRCS				= ft_printf.c \
-					  scrape.c \
-					  output.c \
-					  utils.c
+SRCS		=	ft_printf.c \
+				scrape.c \
+				output.c \
+				utils.c
 
-OBJS			= $(SRCS:.c=.o)
+OBJS		=	$(SRCS:.c=.o)
 
-BONUS				= ft_printf_bonus.c \
-					  scrape_bonus.c \
-					  output_bonus.c \
-					  utils_bonus.c
+$(NAME):	$(OBJS)
+			ar rcs $(NAME) $(OBJS)
 
-BONUS_OBJS		= $(BONUS:.c=.o)
-
-ifdef WITH_BONUS
-OBJS += $(BONUS_OBJS)
-endif
-
-CC				= gcc
-RM				= rm -f
-CFLAGS			= -Wall -Wextra -Werror
-
-$(NAME):		$(OBJS)
-				ar rcs $(NAME) $(OBJS)
-
-.PHONY:			all clean fclean re bonus
-
-all:			$(NAME)
+all:		$(NAME)
 
 clean:
-				$(RM) $(OBJS) $(BONUS_OBJS)
+			$(RM) $(OBJS)
 
-fclean:			clean
-				$(RM) $(NAME)
+fclean:		clean
+			$(RM) $(NAME)
 
-re:				fclean $(NAME)
+re:			fclean $(NAME)
 
-bonus:
-				make WITH_BONUS=1
+.PHONY:		all clean fclean re bonus
