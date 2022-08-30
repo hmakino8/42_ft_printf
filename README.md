@@ -21,7 +21,7 @@ Test to confirm operation, run:
 $ ./test
 ```
 ### Description
-- Write a library that contains ft_printf/ft_dprintf, a function that will mimic the real printf/dprintf.
+- Write a library that contains ft_printf/ft_dprintf, functions that will mimic the real printf/dprintf.
 - It must not do the buﬀer management like the real printf.
 - It will manage the following conversions: cspdiuxX%.
 - It will manage any combination of the following ﬂags: ’-0.*’ and minimum ﬁeld width with all conversions.
